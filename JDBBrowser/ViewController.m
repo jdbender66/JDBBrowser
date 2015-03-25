@@ -30,7 +30,7 @@
 }
 
 
--(void)connection:(NSURLConnection *)connection didRecieveData:(NSData *)data{
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
     NSString *newData = [NSString stringWithUTF8String:[data bytes]];
     
     [_responseString appendString:newData];
